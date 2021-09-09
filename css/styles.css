@@ -5,15 +5,12 @@
 @media screen and (min-width: 870px) {
 	.mang-seal{
 		display:flex;
+		justify-content: space-around;
 		text-align: center;
 	}
 	#youtube{
 		width: 90%;
 		height: 562px;
-	}
-	.mang-seal{
-		display: flex;
-		justify-content: space-around;
 	}
 	.seal{
 		display: flex;
@@ -27,12 +24,12 @@
 		padding-left: 100px;
 		padding-right: 100px;
 	  }
-	  
-	  .imgseal{
-		width: 90px;
+	  #p-seal{
+		  width: 350px;
 	  }
-	  #seal01{
-		width: 80%;
+	  
+	  #imgseal{
+		width: 360px;
 	  }
 }
 .h2seal{
@@ -62,9 +59,12 @@
 		width: 90%;
 		height: 350px;
 	}
-	.imgseal{
-		width: 70px;
-	  }
+	.mangseall{
+		width: 80%;
+	}
+	#imgseal{
+		width: 80%;
+	}
 }
 .text-container1{
 	margin-right: 50px;
@@ -1134,14 +1134,6 @@ input[type='checkbox'] {
 		margin-left: 0.75rem;
 	}
 	/* end of team */
-
-
-	/* About */
-	.counter .image-container {
-		margin-bottom: 0;
-	}
-	/* end of about */
-
 
 	/* Contact */
 	.form-2 {
