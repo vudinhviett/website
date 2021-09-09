@@ -5,7 +5,6 @@
 @media screen and (min-width: 870px) {
 	.mang-seal{
 		display:flex;
-		justify-content: space-around;
 		text-align: center;
 	}
 	#youtube{
