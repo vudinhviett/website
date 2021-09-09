@@ -26,7 +26,9 @@
 	  #p-seal{
 		  width: 350px;
 	  }
-	  
+	  .imgseal{
+		  width: 80px;
+	  }
 	  #imgseal{
 		width: 360px;
 	  }
