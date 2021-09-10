@@ -66,6 +66,10 @@
 	#imgseal{
 		width: 80%;
 	}
+	.imgseal{
+		width: 80px;
+		margin: 10px;
+	}
 }
 .text-container1{
 	margin-right: 50px;
