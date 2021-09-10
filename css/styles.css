@@ -2,13 +2,13 @@
 *{
 	text-decoration: none;
 }
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 680px) {
 	.mang-seal{
 		display:flex;
 		text-align: center;
 	}
 	#youtube{
-		width: 90%;
+		width: 100%;
 		height: 562px;
 	}
 	.seal{
@@ -32,6 +32,11 @@
 	  #imgseal{
 		width: 360px;
 	  }
+	  #youtube{
+		width: 100%;
+		height: 500px;
+		margin-bottom: 50px;
+	}
 }
 .h2seal{
 	color: #009cd7;
@@ -49,16 +54,19 @@
 		margin-left: 300px;
 	}
 }
+@media screen and (max-width: 700px){
+	#youtube{
+		width: 100%;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+}
 @media screen and (max-width: 1000px) {
 	.chonvt{
 		width: 100%;
 	}	
 	#header{
 		padding-top: 150px;
-	}
-	#youtube{
-		width: 90%;
-		height: 350px;
 	}
 	.mangseall{
 		width: 80%;
