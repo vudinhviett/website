@@ -1,7 +1,3 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
-function disableselect(e) {
-    return false;
-}
 
 function reEnable() {
     return true;
