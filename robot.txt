@@ -1,4 +1,0 @@
-User-agent: Googlebot
-Allow: /
-Disallow: /index.html
-Sitemap: https://napchaivietthai.com.vn/sitemap.xml
