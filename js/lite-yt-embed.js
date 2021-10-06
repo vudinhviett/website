@@ -3,12 +3,10 @@ class LiteYTEmbed extends HTMLElement {
         this.videoId = this.getAttribute('videoid');
 
         let playBtnEl = this.querySelector('.lty-playbtn');
-        // A label for the button takes priority over a [playlabel] attribute on the custom-element
         this.playLabel = (playBtnEl && playBtnEl.textContent.trim()) || this.getAttribute('playlabel') || 'Play';
 
         if (!this.style.backgroundImage) {
           this.posterUrl = `https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg`;
-          // Warm the connection for the poster image
           LiteYTEmbed.addPrefetch('preload', this.posterUrl, 'image');
 
           this.style.backgroundImage = `url("${this.posterUrl}")`;
@@ -42,8 +40,6 @@ class LiteYTEmbed extends HTMLElement {
     }
    static warmConnections() {
         if (LiteYTEmbed.preconnected) return;
-
-        // The iframe document and most of its subresources come right off youtube.com
         LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
         LiteYTEmbed.preconnected = true;
     }
