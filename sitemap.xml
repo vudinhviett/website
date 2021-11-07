@@ -9,42 +9,52 @@
 
 <url>
   <loc>https://napchaivietthai.com.vn/</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/gioi-thieu</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-chai</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.95</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/mang-seal</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.95</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-nhom</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-thu-y</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-vien-chan</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-bi-nhua</loc>
-  <lastmod>2021-11-05T08:30:18+00:00</lastmod>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com.vn/blog/mang-seal-la-gi</loc>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com.vn/blog/vi-sao-nen-chon-nap-chai-viet-thai</loc>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
