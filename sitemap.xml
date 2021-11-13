@@ -20,12 +20,12 @@
 <url>
   <loc>https://napchaivietthai.com.vn/nap-chai</loc>
   <lastmod>2021-11-05T18:32:20+00:00</lastmod>
-  <priority>0.95</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/mang-seal</loc>
   <lastmod>2021-11-05T18:32:20+00:00</lastmod>
-  <priority>0.95</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/nap-nhom</loc>
@@ -48,14 +48,24 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://napchaivietthai.com.vn/blog</loc>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
   <loc>https://napchaivietthai.com.vn/blog/mang-seal-la-gi</loc>
   <lastmod>2021-11-05T18:32:20+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://napchaivietthai.com.vn/blog/vi-sao-nen-chon-nap-chai-viet-thai</loc>
   <lastmod>2021-11-05T18:32:20+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://napchaivietthai.com.vn/blog/nap-chai-la-gi</loc>
+  <lastmod>2021-11-05T18:32:20+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 
 
