@@ -904,14 +904,14 @@ body {
   color: #009cd7;
   font: 600 1rem/1.375rem "Montserrat", sans-serif;
 }
-.our-portfolio {
+.our-product {
   padding-top: 130px;
   overflow: hidden;
   position: relative;
 }
-.our-portfolio:before {
+.our-product:before {
   content: '';
-  background-image: url(../images/portfolio-right-dec.jpg);
+  background-image: url(../images/product-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -920,9 +920,9 @@ body {
   height: 861px;
   z-index: 1;
 }
-.our-portfolio:after {
+.our-product:after {
   content: '';
-  background-image: url(../images/portfolio-left-dec.jpg);
+  background-image: url(../images/product-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -931,68 +931,68 @@ body {
   height: 759px;
   z-index: 1;
 }
-.our-portfolio .section-heading {
+.our-product .section-heading {
   margin-bottom: 80px;
   z-index: 20;
 }
-.our-portfolio .container-fluid {
+.our-product .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
   z-index: 2;
 }
-.our-portfolio .item {
+.our-product .item {
   position: relative;
   z-index: 222;
 }
-.portfolio-item {
+.product-item {
   border-radius: 25px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   margin: 15px;
 }
-.portfolio-item .thumb {
+.product-item .thumb {
   position: relative;
   border-radius: 50px;
 }
-.portfolio-item:hover .down-content h4,
-.portfolio-item:hover .down-content span {
+.product-item:hover .down-content h4,
+.product-item:hover .down-content span {
   color: #4da6e7;
 }
-.portfolio-item .thumb img {
+.product-item .thumb img {
   border-top-right-radius: 23px;
   border-top-left-radius: 23px;
   overflow: hidden;
 }
-.portfolio-item .down-content {
+.product-item .down-content {
   background-color: #fff;
   text-align: center;
   padding: 18px 0px;
   border-bottom-right-radius: 23px;
   border-bottom-left-radius: 23px;
 }
-.portfolio-item .down-content h4 {
+.product-item .down-content h4 {
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 8px;
   transition: all .3s;
 }
-.portfolio-item .down-content span {
+.product-item .down-content span {
   font-size: 15px;
   color: #afafaf;
   transition: all .3s;
 }
-.our-portfolio .owl-nav {
+.our-product .owl-nav {
   display: none;
   position: absolute;
   top: -125px;
   right: 15%;
   max-width: 1320px;
 }
-.our-portfolio .owl-nav .owl-next {
+.our-product .owl-nav .owl-next {
   margin-left: 10px;
 }
-.our-portfolio .owl-nav span {
+.our-product .owl-nav span {
   width: 46px;
   height: 46px;
   display: inline-block;
@@ -1004,7 +1004,7 @@ body {
   color: #fff;
   transition: all 0.5s;
 }
-.our-portfolio .owl-nav span:hover {
+.our-product .owl-nav span:hover {
   color: #fff;
   background-color: #4da6e7;
 }
@@ -1370,7 +1370,7 @@ footer p a {
   .post-item {
     margin-bottom: 70px;
   }
-  .our-portfolio .owl-nav {
+  .our-product .owl-nav {
     display: none !important;
   }
   .contact-info {
@@ -1440,14 +1440,14 @@ footer p a {
   .services ul.nacc li .right-image img {
     float: none;
   }
-  .our-portfolio .section-heading,
+  .our-product .section-heading,
   .about-us .section-heading,
   .about-us .about-item,
   .about-us p,
   .about-us .main-green-button {
     text-align: center;
   }
-  .our-portfolio .section-heading .line-dec {
+  .our-product .section-heading .line-dec {
     margin: 0 auto;
   }
   .our-services .section-heading {
