@@ -119,81 +119,80 @@ $("img").on("error", function () {
 
 })(window.jQuery);
 
-// !function() {
-//   function detectDevTool(allow) {
-//     if(isNaN(+allow)) allow = 100;
-//     var start = +new Date(); // Validation of built-in Object tamper prevention.
-//     debugger;
-//     var end = +new Date(); // Validates too.
-//     if(isNaN(start) || isNaN(end) || end - start > allow) {
-//       // input your code here when devtools detected.
-//     }
-//   }
-//   if(window.attachEvent) {
-//     if (document.readyState === "complete" || document.readyState === "interactive") {
-//         detectDevTool();
-//       window.attachEvent('onresize', detectDevTool);
-//       window.attachEvent('onmousemove', detectDevTool);
-//       window.attachEvent('onfocus', detectDevTool);
-//       window.attachEvent('onblur', detectDevTool);
-//     } else {
-//         setTimeout(argument.callee, 0);
-//     }
-//   } else {
-//     window.addEventListener('load', detectDevTool);
-//     window.addEventListener('resize', detectDevTool);
-//     window.addEventListener('mousemove', detectDevTool);
-//     window.addEventListener('focus', detectDevTool);
-//     window.addEventListener('blur', detectDevTool);
-//   }
-// }();
+!function() {
+  function detectDevTool(allow) {
+    if(isNaN(+allow)) allow = 100;
+    var start = +new Date(); // Validation of built-in Object tamper prevention.
+    debugger;
+    var end = +new Date(); // Validates too.
+    if(isNaN(start) || isNaN(end) || end - start > allow) {
+      // input your code here when devtools detected.
+    }
+  }
+  if(window.attachEvent) {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        detectDevTool();
+      window.attachEvent('onresize', detectDevTool);
+      window.attachEvent('onmousemove', detectDevTool);
+      window.attachEvent('onfocus', detectDevTool);
+      window.attachEvent('onblur', detectDevTool);
+    } else {
+        setTimeout(argument.callee, 0);
+    }
+  } else {
+    window.addEventListener('load', detectDevTool);
+    window.addEventListener('resize', detectDevTool);
+    window.addEventListener('mousemove', detectDevTool);
+    window.addEventListener('focus', detectDevTool);
+    window.addEventListener('blur', detectDevTool);
+  }
+}();
 
-// const devtools = {
-// 	isOpen: false,
-// 	orientation: undefined,
-// };
+const devtools = {
+	isOpen: false,
+	orientation: undefined,
+};
 
-// const threshold = 160;
+const threshold = 160;
 
-// const emitEvent = (isOpen, orientation) => {
-// 	globalThis.dispatchEvent(new globalThis.CustomEvent('devtoolschange', {
-// 		detail: {
-// 			isOpen,
-// 			orientation,
-// 		},
-// 	}));
-// };
+const emitEvent = (isOpen, orientation) => {
+	globalThis.dispatchEvent(new globalThis.CustomEvent('devtoolschange', {
+		detail: {
+			isOpen,
+			orientation,
+		},
+	}));
+};
 
-// const main = ({emitEvents = true} = {}) => {
-// 	const widthThreshold = globalThis.outerWidth - globalThis.innerWidth > threshold;
-// 	const heightThreshold = globalThis.outerHeight - globalThis.innerHeight > threshold;
-// 	const orientation = widthThreshold ? 'vertical' : 'horizontal';
+const main = ({emitEvents = true} = {}) => {
+	const widthThreshold = globalThis.outerWidth - globalThis.innerWidth > threshold;
+	const heightThreshold = globalThis.outerHeight - globalThis.innerHeight > threshold;
+	const orientation = widthThreshold ? 'vertical' : 'horizontal';
 
-// 	if (
-// 		!(heightThreshold && widthThreshold)
-// 		&& ((globalThis.Firebug && globalThis.Firebug.chrome && globalThis.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)
-// 	) {
-// 		if ((!devtools.isOpen || devtools.orientation !== orientation) && emitEvents) {
-// 			emitEvent(true, orientation);
-// 		}
+	if (
+		!(heightThreshold && widthThreshold)
+		&& ((globalThis.Firebug && globalThis.Firebug.chrome && globalThis.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)
+	) {
+		if ((!devtools.isOpen || devtools.orientation !== orientation) && emitEvents) {
+			emitEvent(true, orientation);
+		}
 
-// 		devtools.isOpen = true;
-// 		devtools.orientation = orientation;
-// 	} else {
-// 		if (devtools.isOpen && emitEvents) {
-// 			emitEvent(false, undefined);
-// 		}
+		devtools.isOpen = true;
+		devtools.orientation = orientation;
+	} else {
+		if (devtools.isOpen && emitEvents) {
+			emitEvent(false, undefined);
+		}
 
-// 		devtools.isOpen = false;
-// 		devtools.orientation = undefined;
-// 	}
-// };
+		devtools.isOpen = false;
+		devtools.orientation = undefined;
+	}
+};
 
-// main({emitEvents: false});
-// setInterval(main, 500);
+main({emitEvents: false});
+setInterval(main, 500);
 
-// // Get notified when it's opened/closed or orientation changes
-// window.addEventListener('devtoolschange', event => {
-//   console.clear();
-//   document.write(' ')
-// });
+// Get notified when it's opened/closed or orientation changes
+window.addEventListener('devtoolschange', event => {
+  window.location.replace("https://www.google.com/search?q=n%E1%BA%AFp+chai+vi%E1%BB%87t+th%C3%A1i")
+});
