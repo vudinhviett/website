@@ -1,6 +1,9 @@
 $("img").on("error", function () {
   $(this).attr("src", "/assets/images/error.png");
 });
+$("img").error(function () {
+  $(this).unbind("error").attr("src", "/assets/images/error.png");
+});
 (function ($) {
 
   "use strict";
