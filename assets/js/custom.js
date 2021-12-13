@@ -1,8 +1,5 @@
-$("img").on("error", function () {
-  $(this).attr("src", "/assets/images/error.png");
-});
-$("img").error(function () {
-  $(this).unbind("error").attr("src", "/assets/images/error.png");
+$('img').on("error", function() {
+  $(this).attr('src', 'https://napchaivietthai.com.vn/assets/images/error.png');
 });
 (function ($) {
 
