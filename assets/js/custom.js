@@ -1,6 +1,8 @@
-$('img').on("error", function() {
-  $(this).attr('src', 'https://napchaivietthai.com.vn/assets/images/error.png');
-});
+function imgError(image) {
+  image.onerror = "";
+  image.src = "/assets/images/error.png";
+  return true;
+}
 (function ($) {
 
   "use strict";

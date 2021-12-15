@@ -5,13 +5,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Chúng tôi hiện đang sản xuất các loại nắp nhôm dành cho các loại chai rượu, chai rượu vang, lọ thuỷ tinh, lọ thuốc,... với mức giá rẻ và chất lượng tốt nhất.">
+    <meta name="description"
+        content="Chúng tôi hiện đang sản xuất các loại nắp nhôm dành cho các loại chai rượu, chai rượu vang, lọ thuỷ tinh, lọ thuốc,... với mức giá rẻ và chất lượng tốt nhất.">
     <meta name="author" content="Bao Bì Việt Thái">
-  <meta property="og:title" content="Nắp chai nhôm giá rẻ - Nắp chai Việt Thái" />
-  <meta property="og:image" content="https://napchaivietthai.com.vn/assets/images/img.jpg" />
-  <meta property="og:description" content="Chuyên sản xuất các loại nắp chai và màng seal" />
-  <meta property="og:url" content="https://napchaivietthai.com.vn/nap-chai/nap-nhom">
-  <meta name="revisit-after" content="1 days" />
+    <meta property="og:title" content="Nắp chai nhôm giá rẻ - Nắp chai Việt Thái" />
+    <meta property="og:image" content="https://napchaivietthai.com.vn/assets/images/img.jpg" />
+    <meta property="og:description" content="Chuyên sản xuất các loại nắp chai và màng seal" />
+    <meta property="og:url" content="https://napchaivietthai.com.vn/nap-chai/nap-nhom">
+    <meta name="revisit-after" content="1 days" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,22 +31,26 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
     <link rel="stylesheet" href="/assets/css/animated.css">
     <link rel="stylesheet" href="/assets/css/product.css">
+    <style>
+        .video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+    </style>
 </head>
 
 <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <!-- <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div> -->
-    <!-- ***** Preloader End ***** -->
 
     <!-- Pre-header Starts -->
     <div class="pre-header">
@@ -60,6 +65,9 @@
                 </div>
                 <div class="col-lg-4 col-sm-4 col-5">
                     <ul class="social-media">
+                        <li><a
+                                href="https://napchaivietthai-com-vn.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=vi"><i
+                                    class="fa fa-language"></i></a></li>
                         <li><a href="https://facebook.com/baobivietthai" target="_blank"><i
                                     class="fa fa-facebook"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCZdHK3AW1ZnLY6KASEE4HQA" target="_blank"><i
@@ -72,14 +80,15 @@
     <!-- Pre-header End -->
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <header class="header-area header-sticky" data-wow-duration="0.75s" data-wow-delay="0s">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo">
-                            <img src="/assets/images/logo.png" alt="Logo" style="width: 65px;">
+                            <img onerror="imgError(this);" src="/assets/images/logo.png" alt="Logo"
+                                style="width: 65px;">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -109,11 +118,20 @@
 
     <section class="container" id="product">
         <h6 id="heading">Nắp chai</h6>
-        <h1 class="my-4 text-center text-lg-left">Hình ảnh về nắp nhôm</h1>
+        <h1 class="my-4 text-center text-lg-left">Video 3D</h1>
+        <p style="text-align: center;padding-top: 20px;">
+        <div class="video-container">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/dxVB4EEXdaM?autoplay=1&mute=1"
+                title="Video 3D Nắp Nhôm" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        </p>
+        <h1 class="my-4 text-center text-lg-left" style="padding-top: 100px;">Hình ảnh về nắp nhôm</h1>
         <div class="row gallery fadeIn" style="margin-top: 100px;">
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-28.png">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-28.png" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -121,7 +139,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-25.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-25.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -129,7 +147,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-17.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-17.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -137,7 +155,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-29.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-29.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -145,7 +163,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-18.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-18.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -153,7 +171,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-8.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-8.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -161,7 +179,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-15.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-15.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -169,7 +187,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-16.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-16.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -177,7 +195,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-12.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-12.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -185,7 +203,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-20.png">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-20.png" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -193,7 +211,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-19.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-19.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -201,7 +219,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-7.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-7.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -209,7 +227,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-24.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-24.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -217,7 +235,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-20.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-20.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -225,7 +243,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-21.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-21.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -233,7 +251,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-22.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-22.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -241,7 +259,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-23.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-23.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -249,7 +267,7 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-26.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-26.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
@@ -257,16 +275,22 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-27.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-27.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
             </div>
-
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-24.jpg">
-                    <figure><img class="img-fluid img-thumbnail"
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
                             src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-24.jpg" alt="Nắp nhôm Việt Thái">
+                    </figure>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-30.jpg">
+                    <figure><img onerror="imgError(this);" class="img-fluid img-thumbnail"
+                            src="/assets/images/san-pham/nap-chai/nap-nhom/nap-nhom-30.jpg" alt="Nắp nhôm Việt Thái">
                     </figure>
                 </a>
             </div>
@@ -290,7 +314,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="contact-dec">
-                                    <img src="/assets/images/contact.gif" alt="">
+                                    <img onerror="imgError(this);" src="/assets/images/contact.gif"
+                                        alt="Contact me illutration animation">
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -306,7 +331,8 @@
                                         <div class="col-lg-4">
                                             <div class="info-post">
                                                 <div class="icon">
-                                                    <img src="/assets/images/phone-icon.png" alt="">
+                                                    <img onerror="imgError(this);" src="/assets/images/phone-icon.png"
+                                                        alt="Phone icon">
                                                     <a target="_blank" href="tel:0982225907">0982 222 5907</a>
                                                 </div>
                                             </div>
@@ -314,7 +340,8 @@
                                         <div class="col-lg-4">
                                             <div class="info-post">
                                                 <div class="icon">
-                                                    <img src="/assets/images/email-icon.png" alt="">
+                                                    <img onerror="imgError(this);" src="/assets/images/email-icon.png"
+                                                        alt="Email icon">
                                                     <a target="_blank"
                                                         href="mailto:invietthai@gmail.com">invietthai@gmail.com</a>
                                                 </div>
@@ -323,7 +350,8 @@
                                         <div class="col-lg-4">
                                             <div class="info-post">
                                                 <div class="icon">
-                                                    <img src="/assets/images/location-icon.png" alt="">
+                                                    <img onerror="imgError(this);"
+                                                        src="/assets/images/location-icon.png" alt="Location icon">
                                                     <a target="_blank"
                                                         href="https://maps.google.com/maps/dir//Vi%E1%BB%87t+Th%C3%A1i:+Chuy%C3%AAn+s%E1%BA%A3n+xu%E1%BA%A5t+n%E1%BA%AFp+chai+v%C3%A0+m%C3%A0ng+seal+464+Ph%C3%BAc+Di%E1%BB%85n+Xu%C3%A2n+Ph%C6%B0%C6%A1ng+Nam+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i/@21.0296032,105.7559949,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x31345497a1b2022b:0xa942fe47e6478794">12/464
                                                         Phúc Diễn</a>
@@ -385,33 +413,33 @@
     <script src="/assets/js/product.js"></script>
     <script src="/assets/js/animation.js"></script>\
     <script src="/assets/js/custom.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYRD8BDZHR"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-GYRD8BDZHR');
-  </script>
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-  <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101967721651352");
-      chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function () {
-          FB.init({
-              xfbml: true,
-              version: 'v11.0'
-          });
-      };
-      (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYRD8BDZHR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GYRD8BDZHR');
+    </script>
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101967721651352");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 
 </html>
