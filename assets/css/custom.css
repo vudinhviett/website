@@ -1108,7 +1108,7 @@ body {
 
 .our-product .section-heading {
   margin-bottom: 80px;
-  z-index: 20;
+  z-index: 2;
 }
 
 .our-product .container-fluid {
@@ -1769,7 +1769,7 @@ footer p a {
 .zalo-chat-widget,.ripple {
   border: none;
   visibility: visible;
-  bottom: 40px;
+  bottom: 20px;
   left: 40px;
   position: fixed;
   width: 55px;
