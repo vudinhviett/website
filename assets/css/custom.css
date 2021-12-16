@@ -1764,19 +1764,16 @@ footer p a {
     padding: 80px 10px 50px 10px;
     overflow-wrap: break-word;
   }
-  .zalo-chat-widget,.ripple{
-    left: 15px;
-  }
 }
 
 .zalo-chat-widget,.ripple {
   border: none;
   visibility: visible;
-  bottom: 20px;
-  left: 35px;
+  bottom: 100px;
+  right: 25px;
   position: fixed;
-  width: 55px;
-  height: 55px;
+  width: 57px;
+  height: 57px;
   border-radius: 50%;
   top: auto;
   animation: pulse 2s ease infinite;
