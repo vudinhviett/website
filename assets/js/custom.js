@@ -150,9 +150,6 @@ function imgError(image) {
   }
 }();
 window.onload = function () {
-  document.addEventListener("contextmenu", function (e) {
-      e.preventDefault();
-  }, false);
   document.addEventListener("keydown", function (e) {
       //document.onkeydown = function(e) {
       // "I" key

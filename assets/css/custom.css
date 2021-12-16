@@ -1765,7 +1765,7 @@ footer p a {
     overflow-wrap: break-word;
   }
   .zalo-chat-widget,.ripple{
-    left: 20px;
+    left: 15px;
   }
 }
 
@@ -1773,10 +1773,10 @@ footer p a {
   border: none;
   visibility: visible;
   bottom: 20px;
-  left: 40px;
+  left: 35px;
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   top: auto;
   animation: pulse 2s ease infinite;
@@ -1790,10 +1790,10 @@ footer p a {
   }
 
   70% {
-    -webkit-box-shadow: 0 0 0 18px #0060e704;
+    -webkit-box-shadow: 0 0 0 10px transparent;
   }
 
   100% {
-    -webkit-box-shadow: 0 0 0 0 #0060e700;
+    -webkit-box-shadow: 0 0 0 0 transparent;
   }
 }
