@@ -1,7 +1,8 @@
+$("img").on("error", function () {
+  $(this).attr("src", "broken.gif");
+});
 (function ($) {
-  $("img").error(function () {
-    $(this).unbind("error").attr("src", "/assets/images/error.png");
-  });
+
   "use strict";
 
   // Header Type = Fixed
