@@ -1,8 +1,7 @@
-$("img").error(function () {
-  $(this).unbind("error").attr("src", "/assets/images/error.png");
-});
 (function ($) {
-
+  $("img").error(function () {
+    $(this).unbind("error").attr("src", "/assets/images/error.png");
+  });
   "use strict";
 
   // Header Type = Fixed
