@@ -252,7 +252,8 @@ body {
 }
 
 .background-header {
-  background-color: #fff !important;
+  background-color: rgba(255,255,255,0.75) !important;
+  backdrop-filter: blur(1rem);
   height: 80px !important;
   position: fixed !important;
   top: 0px;
@@ -291,8 +292,6 @@ body {
 }
 
 .header-area {
-  background-color: #fff;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.03);
   position: absolute;
   left: 0px;
   right: 0px;
@@ -1774,7 +1773,7 @@ footer p a {
   position: fixed;
   width: 57px;
   height: 57px;
-  border-radius: 50%;
+  border-radius: 40%;
   top: auto;
   animation: pulse 2s ease infinite;
   z-index: 50;
@@ -1783,11 +1782,11 @@ footer p a {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #0060e74b;
+    -webkit-box-shadow: 0 0 0 0 #009ed725;
   }
 
   70% {
-    -webkit-box-shadow: 0 0 0 10px transparent;
+    -webkit-box-shadow: 0 0 0 12px transparent;
   }
 
   100% {
