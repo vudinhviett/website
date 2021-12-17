@@ -73,6 +73,13 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
   -webkit-user-select: none;
 }
+input, textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
 
 html, body {
   font-family: 'Montserrat', sans-serif;
@@ -982,7 +989,8 @@ body {
   opacity: 1;
   transform: translateX(0px);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(0.5rem);
   border-radius: 15px;
   padding: 50px 120px 20px 120px;
 }
