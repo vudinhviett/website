@@ -1,5 +1,5 @@
 $("img").on("error", function () {
-  $(this).attr("src", "broken.gif");
+  $(this).attr("src", "/assets/images/error.png");
 });
 (function ($) {
 
