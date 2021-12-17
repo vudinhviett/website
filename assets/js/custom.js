@@ -1,8 +1,6 @@
-function imgError(image) {
-  image.onerror = "";
-  image.src = "/assets/images/error.png";
-  return true;
-}
+$("img").error(function () {
+  $(this).unbind("error").attr("src", "broken.gif");
+});
 (function ($) {
 
   "use strict";
