@@ -1769,7 +1769,7 @@ footer p a {
 .zalo-chat-widget,.ripple {
   border: none;
   visibility: visible;
-  bottom: 100px;
+  bottom: 20px;
   right: 25px;
   position: fixed;
   width: 57px;
