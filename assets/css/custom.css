@@ -71,6 +71,7 @@ header, nav, section, article, aside, footer, hgroup {
 
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 input, textarea {
   -webkit-user-select: text;
@@ -107,7 +108,7 @@ p {
   line-height: 30px;
   font-weight: 300;
   color: #4d4d4d;
-  pointer-events: none;
+  user-select: text;
 }
 
 img {
