@@ -2,7 +2,7 @@ $("img").on("error", function () {
   $(this).attr("src", "/assets/images/error.png");
 });
 document.addEventListener('copy', (event) => {
-  const pagelink = `\n\nNguồn: ${document.location.href}`;
+  const pagelink = `\n\nĐược sao chép từ: ${document.location.href}`;
   event.clipboardData.setData('text', document.getSelection() + pagelink);
   event.preventDefault();
 });
