@@ -2,8 +2,8 @@ $("img").on("error", function () {
   $(this).attr("src", "/assets/images/error.png");
 });
 document.addEventListener('copy', (event) => {
-  const pagelink = `\n\nĐược sao chép từ: ${document.location.href}`;
-  event.clipboardData.setData('text', document.getSelection() + pagelink);
+  const pagelink = `${document.location.href}`;
+  event.clipboardData.setData('text', pagelink);
   event.preventDefault();
 });
 (function ($) {

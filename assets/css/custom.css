@@ -107,6 +107,7 @@ p {
   line-height: 30px;
   font-weight: 300;
   color: #4d4d4d;
+  pointer-events: none;
 }
 
 img {
