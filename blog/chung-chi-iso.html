@@ -189,9 +189,9 @@
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLScFd3zSEs-29Yfi9rziZKk3z6N6jaITRln84MIpDu4FiYaM7w/formResponse"
+          <form id="contact" action="https://formcarry.com/s/yUhG1qE3IC0"
              method="post"
-            target="_blank">
+            target="hidden-form" onSubmit='alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");setTimeout(function(){ window.location.reload(); }, 1200)'>
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
@@ -236,30 +236,31 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="name" name="entry.2005620554" id="name" placeholder="Tên của bạn" autocomplete="on"
+                        <input type="name" name="Tên &nbsp KH" id="name" placeholder="Tên của bạn" autocomplete="on"
                           required>
                       </fieldset>
                       <fieldset>
-                        <input type="email" name="entry.1045781291" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email của bạn"
+                        <input type="email" name="Email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email của bạn"
                           required="">
                       </fieldset>
                       <fieldset>
-                        <input type="number" name="entry.1166974658" id="subject"
+                        <input type="number" name="Số &nbsp điện &nbsp thoại" id="subject"
                           placeholder="Số điện thoại của bạn" autocomplete="on">
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <textarea name="entry.839337160" type="text" class="form-control" id="message"
+                        <textarea name="Nội &nbsp dung" type="text" class="form-control" id="message"
                           placeholder="Lời nhắn của bạn" required=""></textarea>
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="main-button ">Gửi thông
+                        <button type="submit" id="form-submit" class="main-button">Gửi thông
                           tin</button>
                       </fieldset>
                     </div>
+                    <iframe name="hidden-form" style="display: none;"></iframe>
                   </div>
                 </div>
               </div>
