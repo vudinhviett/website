@@ -148,16 +148,16 @@
       <p>Nắp chai nhôm có kích thước đa dạng, màu sắc phong phú. Bạn có thể thu hút người dùng bằng những hình ảnh, dấu ấn của riêng doanh nghiệp mình lên nắp chai.</p>
       <p>Mang lại sự sang trọng, thẩm mỹ và đẳng cấp cho chai thủy tinh, chai rượu, hũ nhựa thể hiện giá trị sản phẩm.</p>
       <h4>Các loại nắp chai</h4>
-      <a href="/nap-nhom/nap-nhom" id="link-ul">
+      <a href="/nap-chai/nap-nhom" rel="dofollow" id="link-ul">
         <ul>Nắp chai nhôm</ul>
       </a>
-      <a href="/nap-nhom/nap-bi-nhua" id="link-ul">
+      <a href="/nap-chai/nap-bi-nhua" rel="dofollow" id="link-ul">
         <ul>Nắp chai nhựa</ul>
       </a>
-      <a href="/nap-nhom/nap-thu-y" id="link-ul">
+      <a href="/nap-chai/nap-thu-y" rel="dofollow" id="link-ul">
         <ul>Nắp thú y</ul>
       </a>
-      <a href="/nap-nhom/nap-vien-chan" id="link-ul">
+      <a href="/nap-chai/nap-vien-chan" rel="dofollow" id="link-ul">
         <ul>Nắp viền chân</ul>
       </a>
       <h5>Vì sao nên chọn công ty chúng tôi?</h5>
@@ -354,7 +354,7 @@
     </div>
   </footer>
   <div class="ripple">
-    <a href="https://zalo.me/0982225907" target="_blank" class="zalo-chat-widget">
+    <a href="https://zalo.me/0982225907" target="_blank" class="zalo-chat-widget" style="transition: .2s">
       <img src="/assets/images/zalo.svg" alt="Logo Zalo">
     </a>
   </div>
@@ -370,6 +370,12 @@
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-GYRD8BDZHR');
+
+      document.addEventListener('copy', (event) => {
+  const pagelink = window.getSelection() + '<br>' `Nguồn: ${document.location.href}`;
+  event.clipboardData.setData('text', pagelink);
+  event.preventDefault();
+});
   </script>
 
 </body>

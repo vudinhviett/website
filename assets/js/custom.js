@@ -1,11 +1,6 @@
 $("img").on("error", function () {
   $(this).attr("src", "/assets/images/error.png");
 });
-document.addEventListener('copy', (event) => {
-  const pagelink = `${document.location.href}`;
-  event.clipboardData.setData('text', pagelink);
-  event.preventDefault();
-});
 (function ($) {
 
   "use strict";

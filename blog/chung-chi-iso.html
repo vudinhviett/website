@@ -39,6 +39,7 @@
       margin: 10px 0;
     }
 
+
   </style>
 </head>
 
@@ -286,7 +287,7 @@
     </div>
   </footer>
   <div class="ripple">
-    <a href="https://zalo.me/0982225907" target="_blank" class="zalo-chat-widget">
+    <a href="https://zalo.me/0982225907" target="_blank" class="zalo-chat-widget" style="transition: .2s">
       <img src="/assets/images/zalo.svg" alt="Logo Zalo">
     </a>
   </div>
@@ -302,6 +303,12 @@
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-GYRD8BDZHR');
+
+      document.addEventListener('copy', (event) => {
+  const pagelink = window.getSelection() + '<br>' `Nguồn: ${document.location.href}`;
+  event.clipboardData.setData('text', pagelink);
+  event.preventDefault();
+});
   </script>
 
 </body>
