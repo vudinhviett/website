@@ -305,7 +305,7 @@
       gtag('config', 'G-GYRD8BDZHR');
 
       document.addEventListener('copy', (event) => {
-  const pagelink = window.getSelection() + '<br>' `Nguồn: ${document.location.href}`;
+  const pagelink = window.getSelection() + '<br>' + `Nguồn: ${document.location.href}`;
   event.clipboardData.setData('text', pagelink);
   event.preventDefault();
 });
