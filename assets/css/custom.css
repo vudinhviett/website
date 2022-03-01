@@ -92,6 +92,9 @@ html, body {
 a {
   text-decoration: none !important;
 }
+a:hover {
+  cursor: pointer;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
@@ -115,6 +118,11 @@ img {
   pointer-events: none;
   user-select: none;
 }
+
+/* figure {
+  user-select: none;
+  pointer-events: none;
+} */
 
 html,
 body {
