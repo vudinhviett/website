@@ -1482,9 +1482,7 @@ form#contact input {
   -moz-appearance: none;
   appearance: none;
 }
-input:disabled {
-  border: none !important;
-}
+
 
 form#contact input:focus, textarea:focus {
   border: 1.5px solid #009ed7cf !important;
@@ -1514,7 +1512,9 @@ form#contact textarea {
   padding: 15px 20px;
   margin-top: 30px;
 }
-
+#diachiip, #diachiip:focus {
+  border: none !important;
+}
 form#contact textarea::placeholder {
   color: #aaa;
 }
