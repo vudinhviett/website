@@ -195,13 +195,4 @@ let fetchFnc = async () => {
 }
 fetchFnc()
 
-function submit() {
-  if (grecaptcha.getResponse() == "") {
-    alert("Vui lòng xác nhận bạn không phải robot!");
-  } else {
-    alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");
-    setTimeout(function () {
-      window.location.reload();
-    }, 1200)
-  }
-}
+

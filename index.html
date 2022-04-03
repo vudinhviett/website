@@ -354,7 +354,16 @@
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="https://formcarry.com/s/yUhG1qE3IC0" method="post" target="hidden-form" onsubmit="submit()" onsubmit="submit()">
+          <form id="contact" action="https://formcarry.com/s/yUhG1qE3IC0" method="post" target="hidden-form" onsubmit='function submit() {
+            if (grecaptcha.getResponse() == "") {
+              alert("Vui lòng xác nhận bạn không phải robot!");
+            } else {
+              alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");
+              setTimeout(function () {
+                window.location.reload();
+              }, 1200)
+            }
+          }'>
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
