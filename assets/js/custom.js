@@ -17,7 +17,7 @@ $("img").on("error", function () {
     }
   });
 
-  $('img').on('dragstart', function(event) { event.preventDefault(); });
+  $('img').on('dragstart', function (event) { event.preventDefault(); });
 
   // Menu Dropdown Toggle
   if ($('.menu-trigger').length) {
@@ -119,25 +119,25 @@ $("img").on("error", function () {
 
 })(window.jQuery);
 
-!function() {
+!function () {
   function detectDevTool(allow) {
-    if(isNaN(+allow)) allow = 100;
+    if (isNaN(+allow)) allow = 100;
     var start = +new Date(); // Validation of built-in Object tamper prevention.
     debugger;
     var end = +new Date(); // Validates too.
-    if(isNaN(start) || isNaN(end) || end - start > allow) {
+    if (isNaN(start) || isNaN(end) || end - start > allow) {
       // input your code here when devtools detected.
     }
   }
-  if(window.attachEvent) {
+  if (window.attachEvent) {
     if (document.readyState === "complete" || document.readyState === "interactive") {
-        detectDevTool();
+      detectDevTool();
       window.attachEvent('onresize', detectDevTool);
       window.attachEvent('onmousemove', detectDevTool);
       window.attachEvent('onfocus', detectDevTool);
       window.attachEvent('onblur', detectDevTool);
     } else {
-        setTimeout(argument.callee, 0);
+      setTimeout(argument.callee, 0);
     }
   } else {
     window.addEventListener('load', detectDevTool);
@@ -149,36 +149,59 @@ $("img").on("error", function () {
 }();
 window.onload = function () {
   document.addEventListener("keydown", function (e) {
-      //document.onkeydown = function(e) {
-      // "I" key
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-          disabledEvent(e);
-      }
-      // "J" key
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-          disabledEvent(e);
-      }
-      // "S" key + macOS
-      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-          disabledEvent(e);
-      }
-      // "U" key
-      if (e.ctrlKey && e.keyCode == 85) {
-          disabledEvent(e);
-      }
-      // "F12" key
-      if (event.keyCode == 123) {
-          disabledEvent(e);
-      }
+    //document.onkeydown = function(e) {
+    // "I" key
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+      disabledEvent(e);
+    }
+    // "J" key
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+      disabledEvent(e);
+    }
+    // "S" key + macOS
+    if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+      disabledEvent(e);
+    }
+    // "U" key
+    if (e.ctrlKey && e.keyCode == 85) {
+      disabledEvent(e);
+    }
+    // "F12" key
+    if (event.keyCode == 123) {
+      disabledEvent(e);
+    }
   }, false);
 
   function disabledEvent(e) {
-      if (e.stopPropagation) {
-          e.stopPropagation();
-      } else if (window.event) {
-          window.event.cancelBubble = true;
-      }
-      e.preventDefault();
-      return false;
+    if (e.stopPropagation) {
+      e.stopPropagation();
+    } else if (window.event) {
+      window.event.cancelBubble = true;
+    }
+    e.preventDefault();
+    return false;
   }
 };
+function onSubmit(token) {
+  document.getElementById("contact").submit();
+}
+let fetchFnc = async () => {
+  let dataFetch = await fetch(`https://api.ipify.org?format=json`)
+  let dataJSON = await dataFetch.json()
+  console.log(dataJSON)
+  let ipform = document.getElementById('diachiip')
+  ipform.value = 'Địa chỉ IP: ' + dataJSON.ip
+
+}
+fetchFnc()
+
+function submit() {
+  if (grecaptcha.getResponse() == "") {
+    alert("Vui lòng xác nhận bạn không phải robot!");
+  } else {
+    alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");
+    setTimeout(function () {
+      window.location.reload();
+    }, 1200)
+  }
+}

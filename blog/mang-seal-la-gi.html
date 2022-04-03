@@ -328,9 +328,7 @@
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="https://formcarry.com/s/yUhG1qE3IC0"
-             method="post"
-            target="hidden-form" onSubmit='alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");setTimeout(function(){ window.location.reload(); }, 1200)'>
+          <form id="contact" action="https://formcarry.com/s/yUhG1qE3IC0" method="post" target="hidden-form">
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
@@ -389,13 +387,20 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <textarea name="Nội &nbsp dung" type="text" class="form-control" id="message"
+                        <textarea name="Lời nhắn" type="text" class="form-control" id="message"
                           placeholder="Lời nhắn của bạn" required=""></textarea>
                       </fieldset>
                     </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input id="diachiip" type="text" name="Địa &nbsp chỉ &nbsp IP" id="subject"
+                          placeholder="Địa chỉ IP của bạn" disabled>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6"><div class="g-recaptcha" data-sitekey="6LeDp0AfAAAAAHJsRyXDNlCXsSHMGEbWWUpLNyVw"></div></div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="main-button">Gửi thông
+                        <button type="submit" id="form-submit" class="main-button" onclick="submit()">Gửi thông
                           tin</button>
                       </fieldset>
                     </div>
@@ -431,6 +436,14 @@
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/animation.js"></script>
   <script src="/assets/js/custom.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYRD8BDZHR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GYRD8BDZHR');
+  </script>
+   <script src="https://www.google.com/recaptcha/api.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYRD8BDZHR"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
