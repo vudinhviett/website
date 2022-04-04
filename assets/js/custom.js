@@ -186,11 +186,12 @@ function onSubmit(token) {
   document.getElementById("contact").submit();
 }
 let fetchFnc = async () => {
-  let dataFetch = await fetch(`https://api.ipify.org?format=json`)
+  let dataFetch = await fetch(`https://api.freegeoip.app/json/?apikey=e5abd1c0-b422-11ec-85f1-17d3d89c994b`)
   let dataJSON = await dataFetch.json()
   console.log(dataJSON)
   let ipform = document.getElementById('diachiip')
-  ipform.value = 'Địa chỉ IP: ' + dataJSON.ip
+  ipform.value = 'Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
+  document.getElementById('info-footer').innerHTML = 'Địa chỉ IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
 
 }
 fetchFnc()
