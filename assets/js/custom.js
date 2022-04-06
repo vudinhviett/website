@@ -188,22 +188,23 @@ function onSubmit(token) {
 let fetchFnc = async () => {
   let dataFetch = await fetch(`https://api.freegeoip.app/json/?apikey=e5abd1c0-b422-11ec-85f1-17d3d89c994b`)
   let dataJSON = await dataFetch.json()
-  console.log(dataJSON)
+  // console.log(dataJSON)
   let ipform = document.getElementById('diachiip')
   ipform.value = 'Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
   document.getElementById('info-footer').innerHTML = 'Địa chỉ IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
-
+  let trangweb = document.getElementById('trangweb')
+  trangweb.value = window.location.href
 }
 fetchFnc()
 
 function submitInfo() {
-  if (grecaptcha.getResponse() == "") {
-    alert("Vui lòng xác nhận bạn không phải robot!");
+  if (grecaptcha.getResponse() == "1") {
+    alert("Vui lòng xác nhận bạn không phải người máy!");
   } else {
-    alert("Công ty đã nhận được thông tin của bạn và sớm liên hệ cho bạn!");
+    alert("Công ty đã nhận được thông tin của bạn, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!");
+    document.getElementById('contact').submit();
     setTimeout(function () {
       window.location.reload();
     }, 1200)
   }
-  document.getElementById('contact').submit();
 }
