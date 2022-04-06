@@ -198,7 +198,7 @@ let fetchFnc = async () => {
 fetchFnc()
 
 function submitInfo() {
-  if (grecaptcha.getResponse() == "1") {
+  if (grecaptcha.getResponse() == "") {
     alert("Vui lòng xác nhận bạn không phải người máy!");
   } else {
     alert("Công ty đã nhận được thông tin của bạn, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!");
