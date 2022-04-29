@@ -186,12 +186,12 @@ function onSubmit(token) {
   document.getElementById("contact").submit();
 }
 let fetchFnc = async () => {
-  let dataFetch = await fetch(`https://api.freegeoip.app/json/?apikey=e5abd1c0-b422-11ec-85f1-17d3d89c994b`)
+  let dataFetch = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=4843bb67827e40e191814976a159a372`)
   let dataJSON = await dataFetch.json()
   // console.log(dataJSON)
   let ipform = document.getElementById('diachiip')
-  ipform.value = 'Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
-  document.getElementById('info-footer').innerHTML = 'Địa chỉ IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.city + ', ' + dataJSON.country_name
+  ipform.value = 'Vị trí: ' + dataJSON.country_capital + ', ' + dataJSON.country_name
+  document.getElementById('info-footer').innerHTML = 'IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.country_capital + ', ' + dataJSON.country_name + '. ISP: ' + dataJSON.isp
   let trangweb = document.getElementById('trangweb')
   trangweb.value = window.location.href
 }
