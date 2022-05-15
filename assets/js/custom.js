@@ -1,3 +1,26 @@
+let robot_number1 = Math.floor(Math.random() * (10 - 1 + 1)) + 1
+let robot_number2 = Math.floor(Math.random() * (10 - 1 + 1)) + 1
+let robot_number = robot_number1 + robot_number2
+document.getElementById('robot').innerHTML = `<span> Xác nhận robot</span>            
+<input name="${robot_number1} + ${robot_number2} " style="margin-top:8px" type="number" placeholder="${robot_number1} + ${robot_number2} = ">`
+function check_robot() {
+  let input_robot = document.getElementById('robot').children[1].value
+  if (input_robot == robot_number) {
+    if (document.getElementsByClassName('input')[0].value == '' || document.getElementsByClassName('input')[1].value == '' || document.getElementsByClassName('input')[2].value == '' || document.getElementsByClassName('input')[3].value == '') {
+      alert('Vui lòng nhập đủ thông tin')
+    }
+    else {
+      alert("Chúng tôi sẽ sớm nhận được thông tin của bạn")
+      document.getElementById('contact').submit();
+      setTimeout(function () {
+        window.location.reload();
+      }, 1200)
+    }
+  } else {
+    alert("Vui lòng xác nhận lại bạn không phải robot!")
+  }
+
+}
 $("img").on("error", function () {
   $(this).attr("src", "/assets/images/error.png");
 });
@@ -48,7 +71,7 @@ $("img").on("error", function () {
   });
 
   $(document).ready(function () {
-    $(document).on("scroll", onScroll);
+    // $(document).on("scroll", onScroll);
 
     //smoothscroll
     $('.scroll-to-section a[href^="#"]').on('click', function (e) {
@@ -94,25 +117,6 @@ $("img").on("error", function () {
   });
 
 
-  // Page loading animation
-  $(window).on('load', function () {
-
-    $('#js-preloader').addClass('loaded');
-
-  });
-
-
-
-  // Window Resize Mobile Menu Fix
-  function mobileNav() {
-    var width = $(window).width();
-    $('.submenu').on('click', function () {
-      if (width < 767) {
-        $('.submenu ul').removeClass('active');
-        $(this).find('ul').toggleClass('active');
-      }
-    });
-  }
 
 
 
@@ -123,7 +127,7 @@ $("img").on("error", function () {
   function detectDevTool(allow) {
     if (isNaN(+allow)) allow = 100;
     var start = +new Date(); // Validation of built-in Object tamper prevention.
-    debugger;
+    // debugger;
     var end = +new Date(); // Validates too.
     if (isNaN(start) || isNaN(end) || end - start > allow) {
       // input your code here when devtools detected.
@@ -182,29 +186,16 @@ window.onload = function () {
     return false;
   }
 };
-function onSubmit(token) {
-  document.getElementById("contact").submit();
-}
 let fetchFnc = async () => {
   let dataFetch = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=4843bb67827e40e191814976a159a372`)
   let dataJSON = await dataFetch.json()
   // console.log(dataJSON)
-  let ipform = document.getElementById('diachiip')
-  ipform.value = 'Vị trí: ' + dataJSON.country_capital + ', ' + dataJSON.country_name
-  document.getElementById('info-footer').innerHTML = 'IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.country_capital + ', ' + dataJSON.country_name + '. ISP: ' + dataJSON.isp
   let trangweb = document.getElementById('trangweb')
   trangweb.value = window.location.href
+  let ipform = document.getElementById('diachiip')
+  ipform.value = dataJSON.country_capital + ', ' + dataJSON.country_name + ' | ' + dataJSON.ip
+  document.getElementById('info-footer').innerHTML = 'IP: ' + dataJSON.ip + '. Vị trí: ' + dataJSON.country_capital + ', ' + dataJSON.country_name + '. ISP: ' + dataJSON.isp
 }
 fetchFnc()
 
-function submitInfo() {
-  if (grecaptcha.getResponse() == "") {
-    alert("Vui lòng xác nhận bạn không phải người máy!");
-  } else {
-    alert("Công ty đã nhận được thông tin của bạn, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!");
-    document.getElementById('contact').submit();
-    setTimeout(function () {
-      window.location.reload();
-    }, 1200)
-  }
-}
+
