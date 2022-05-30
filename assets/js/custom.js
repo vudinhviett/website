@@ -2,7 +2,7 @@ let robot_number1 = Math.floor(Math.random() * (10 - 1 + 1)) + 1
 let robot_number2 = Math.floor(Math.random() * (10 - 1 + 1)) + 1
 let robot_number = robot_number1 + robot_number2
 document.getElementById('robot').innerHTML = `<span> Xác nhận robot</span>            
-<input name="${robot_number1} + ${robot_number2} " style="margin-top:8px" type="number" placeholder="${robot_number1} + ${robot_number2} = ">`
+<input name="entry.1128344313" style="margin-top:8px" type="number" placeholder="${robot_number1} + ${robot_number2} = ">`
 function check_robot() {
   let input_robot = document.getElementById('robot').children[1].value
   if (input_robot == robot_number) {
@@ -17,7 +17,7 @@ function check_robot() {
       }, 1200)
     }
   } else {
-    alert("Vui lòng xác nhận lại bạn không phải robot!")
+    alert("Vui lòng tính lại kết quả!")
   }
 
 }
@@ -198,4 +198,6 @@ let fetchFnc = async () => {
 }
 fetchFnc()
 
+
+setTimeout(() => {console.clear();console.info('%cViệc làm\nLiên hệ: 0982225907', 'color: red; font-size: 50px; font-weight: bold;')}, 1500)
 
